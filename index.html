@@ -12,76 +12,99 @@
 
         <title>Ishani's Website</title>
 
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="40">
 
         <!-- Navigation bar --------------------------------------------------->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"> Ishani Kathuria </a>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#header"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about"> About </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"> Contact </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/ikathuria"> GitHub </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/ishani-kathuria/"> LinkedIn </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/ii.meraki.ii/?hl=en"> Instagram </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="container-fluid px-0">
 
-        <!-- Header ----------------------------------------------------------->
-
-        <section id="header" class="container header">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit scelerisque. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisi est sit amet facilisis magna etiam tempor. Nam libero justo laoreet sit amet. Molestie a iaculis at erat pellentesque adipiscing commodo. Sit amet dictum sit amet. Bibendum enim facilisis gravida neque convallis a cras semper. Sed libero enim sed faucibus turpis in eu mi. In hendrerit gravida rutrum quisque. Amet commodo nulla facilisi nullam vehicula. Non sodales neque sodales ut etiam sit amet. Scelerisque fermentum dui faucibus in ornare quam viverra. Pellentesque habitant morbi tristique senectus. Neque viverra justo nec ultrices dui sapien eget mi proin. Mauris commodo quis imperdiet massa tincidunt nunc. Diam in arcu cursus euismod quis viverra nibh cras.</p>
-        </section>
-
-        <!-- About ------------------------------------------------------------>
-
-        <section id="about">
-          <h1>About Me</h1>
-          <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
-        </section>
-
-        <!-- Contact ---------------------------------------------------------->
-
-        <section id="contact">
-          <h1>Contact Me</h1>
-          <p>Tempus imperdiet nulla malesuada pellentesque. Vel orci porta non pulvinar neque laoreet. Varius duis at consectetur lorem donec. Dui vivamus arcu felis bibendum ut tristique. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Morbi tristique senectus et netus et malesuada fames ac. Quam viverra orci sagittis eu. Elit ut aliquam purus sit amet luctus venenatis. Nulla pharetra diam sit amet nisl suscipit. Quisque non tellus orci ac auctor augue mauris augue. Ut aliquam purus sit amet luctus venenatis. Interdum consectetur libero id faucibus nisl. At imperdiet dui accumsan sit amet nulla facilisi. Nunc aliquet bibendum enim facilisis. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Fringilla est ullamcorper eget nulla. Iaculis urna id volutpat lacus laoreet. Et leo duis ut diam quam nulla porttitor massa id. Pellentesque nec nam aliquam sem.</p>
-        </section>
-
-        <!-- Footer ----------------------------------------------------------->
-
-        <footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            Built with love during <a href="https://www.scaler.com">Scaler Academy</a> Workshop.
+          <nav id="changenav" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <a id="logo" class="navbar-brand " href="#">
+              Ishani Kathuria
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- content -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#projects"> Projects </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about"> About </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#contact"> Contact </a>
+                </li>
+                <!-- social -->
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://github.com/ikathuria"> GitHub </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ishani-kathuria/"> LinkedIn </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://www.instagram.com/ii.meraki.ii/?hl=en"> Instagram </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <!-- Copyright -------------------------------------------------------->
+        <div class="main">
 
-        </footer>
-        <!-- jQuery, jpopper, js --------------------------------------------------------------->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+          <!-- header -->
 
-    </body>
-</html>
+          <section id="header" class="container">
+            <h1>Hello everyone</h1>
+          </section>
+
+          <!-- projects -->
+
+          <section id="projects" class="container">
+            <h1>Projects</h1>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+          </section>
+
+          <!-- about -->
+
+          <section id="about" class="container">
+            <h1>About Me</h1>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+          </section>
+
+          <!-- contact -->
+
+          <section id="contact" class="container">
+            <h1>Contact Me</h1>
+            <p>Tempus imperdiet nulla malesuada pellentesque. Vel orci porta non pulvinar neque laoreet. Varius duis at consectetur lorem donec. Dui vivamus arcu felis bibendum ut tristique. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Morbi tristique senectus et netus et malesuada fames ac. Quam viverra orci sagittis eu. Elit ut aliquam purus sit amet luctus venenatis. Nulla pharetra diam sit amet nisl suscipit. Quisque non tellus orci ac auctor augue mauris augue. Ut aliquam purus sit amet luctus venenatis. Interdum consectetur libero id faucibus nisl. At imperdiet dui accumsan sit amet nulla facilisi. Nunc aliquet bibendum enim facilisis. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Fringilla est ullamcorper eget nulla. Iaculis urna id volutpat lacus laoreet. Et leo duis ut diam quam nulla porttitor massa id. Pellentesque nec nam aliquam sem.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+          </section>
+
+          <!-- Footer -->
+
+          <footer class="page-footer font-small blue">
+
+            <div class="footer-copyright text-center py-3"> Built with love </div>
+
+          </footer>
+
+          <!-- jQuery, jpopper, js -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+          </div>
+          <script src="scripts/main.js"></script>
+      </body>
+  </html>
