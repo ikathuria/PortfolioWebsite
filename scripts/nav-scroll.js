@@ -1,3 +1,6 @@
+
+// navbar scroll
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -19,3 +22,11 @@ $(window).scroll(function() {
         $('#changenav').removeClass('floatingNav');
     }
 });
+
+// navbar active link
+
+document.getElementById("peojects").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("projects").innerHTML = "YOU CLICKED ME!";
+}
