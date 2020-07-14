@@ -1,13 +1,26 @@
 /* <!-- Global -----------------------------------------------------------> */
+html{
+  box-sizing: border-box;
+}
 *{
   font-family: 'Lato', sans-serif;
 }
+*,*:before,*:after{
+  box-sizing: inherit;
+}
 h1{
   font-weight: 700px;
+  margin: 0 0 30px 0;
 }
-section{
-  padding-top: 100px;
-  padding-bottom: 100px;
+.content-wrapper{
+  padding: 160px 100px;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+p,h1,h2{
+  color: #2c102d;
 }
 
 /* <!-- Navigation bar ---------------------------------------------------> */
@@ -40,24 +53,41 @@ section{
 
 /* <!-- Header -----------------------------------------------------------> */
 #header{
-  width: 85%;
-  padding-top: 240px;
-  padding-bottom: 200px;
+  max-width: inherit;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 260px;
+  padding-bottom: 330px;
+  background-color: white;
 }
 
 /* <!-- Projects ---------------------------------------------------------> */
 #projects{
   text-align: center;
+  background-color: #5EB9FF;
+}
+.card{
+  margin-bottom: 20px;
 }
 
-/* <!-- About ------------------------------------------------------------> */
-#about{
+/* <!-- Skills ------------------------------------------------------------> */
+#skills{
   text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #D759FF;
 }
+
 
 /* <!-- Contact ----------------------------------------------------------> */
 #contact{
   text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #D1FF53;
 }
 
 /* <!-- Footer -----------------------------------------------------------> */
+#footer{
+  background-color: #FFB553;
+}
