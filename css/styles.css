@@ -18,7 +18,7 @@ p{
   font-family: 'Lato', sans-serif;
 }
 .content-wrapper{
-  padding: 160px 100px;
+  padding: 160px 100px 160px 100px;
 }
 body{
   margin: 0;
