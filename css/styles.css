@@ -14,7 +14,7 @@ h2{
   margin-bottom: 35px;
   font-family: 'Lobster', cursive;
 }
-p{
+p,h3{
   font-family: 'Lato', sans-serif;
 }
 .content-wrapper{
