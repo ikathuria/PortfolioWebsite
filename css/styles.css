@@ -2,15 +2,20 @@
 html{
   box-sizing: border-box;
 }
-*{
-  font-family: 'Lato', sans-serif;
-}
 *,*:before,*:after{
   box-sizing: inherit;
 }
 h1{
   font-weight: 700px;
   margin: 0 0 30px 0;
+  font-family: 'Poiret One', cursive;
+}
+h2{
+  margin-bottom: 35px;
+  font-family: 'Lobster', cursive;
+}
+p{
+  font-family: 'Lato', sans-serif;
 }
 .content-wrapper{
   padding: 160px 100px;
@@ -18,9 +23,6 @@ h1{
 body{
   margin: 0;
   padding: 0;
-}
-p,h1,h2{
-  color: #2c102d;
 }
 
 /* <!-- Navigation bar ---------------------------------------------------> */
@@ -63,16 +65,23 @@ p,h1,h2{
 
 /* <!-- Projects ---------------------------------------------------------> */
 #projects{
-  text-align: center;
   background-color: #5EB9FF;
 }
-.card{
-  margin-bottom: 20px;
+projects.card{
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px #464646;
+  cursor: pointer;
+}
+projects.card-img-top{
+  border-radius: 10px;
+  box-shadow: 0 0 10px #464646;
 }
 
 /* <!-- Skills ------------------------------------------------------------> */
 #skills{
-  text-align: center;
   padding-right: 100px;
   padding-left: 100px;
   background-color: #D759FF;
@@ -81,7 +90,6 @@ p,h1,h2{
 
 /* <!-- Contact ----------------------------------------------------------> */
 #contact{
-  text-align: center;
   padding-right: 100px;
   padding-left: 100px;
   background-color: #D1FF53;

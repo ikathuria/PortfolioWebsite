@@ -12,7 +12,7 @@
         <title>Ishani's Portfolio</title>
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato:ital,wght@0,400;0,700;1,400&family=Lobster&family=Poiret+One&display=swap" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/styles.css">
@@ -66,17 +66,17 @@
           <!-- header -->
 
           <section id="header" class="home">
-            <h1>Hi there.</h1>
+            <h1 class="display-1">Hi there.</h1>
           </section>
 
           <!-- projects -->
 
           <section id="projects" class="content-wrapper container-fluid">
-            <h1>Projects</h1>
+            <h2 class="display-2">Projects</h2>
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="card">
-                  <img class="card-img-top" src="images/portfolio.png" alt="Portfolio image">
+                  <a href="#"><img class="card-img-top" src="images/portfolio.png" alt="Portfolio image"></a>
                   <div class="card-body">
                     <h5><a class="card-text" href="#">Portfolio</a></h5>
                   </div>
@@ -84,7 +84,7 @@
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="card">
-                  <img class="card-img-top" src="images/portfolio.png" alt="Portfolio image">
+                  <a href="#"><img class="card-img-top" src="images/portfolio.png" alt="Portfolio image"></a>
                   <div class="card-body">
                     <h5><a class="card-text" href="#">Portfolio</a></h5>
                   </div>
@@ -96,7 +96,7 @@
           <!-- skills -->
 
           <section id="skills" class="content-wrapper container-fluid">
-            <h1>Skills</h1>
+            <h2 class="display-2">Skills</h2>
             <div class="row">
               <div class="col-md-2 col-sm-3">
                 <div class="card text-white bg-dark mb-3">
@@ -112,10 +112,28 @@
           <!-- contact -->
 
           <section id="contact" class="content-wrapper container-fluid">
-            <h1>Contact Me</h1>
-            <p>Tempus imperdiet nulla malesuada pellentesque. Vel orci porta non pulvinar neque laoreet. Varius duis at consectetur lorem donec. Dui vivamus arcu felis bibendum ut tristique. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Morbi tristique senectus et netus et malesuada fames ac. Quam viverra orci sagittis eu. Elit ut aliquam purus sit amet luctus venenatis. Nulla pharetra diam sit amet nisl suscipit. Quisque non tellus orci ac auctor augue mauris augue. Ut aliquam purus sit amet luctus venenatis. Interdum consectetur libero id faucibus nisl. At imperdiet dui accumsan sit amet nulla facilisi. Nunc aliquet bibendum enim facilisis. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Fringilla est ullamcorper eget nulla. Iaculis urna id volutpat lacus laoreet. Et leo duis ut diam quam nulla porttitor massa id. Pellentesque nec nam aliquam sem.</p>
-            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
-            <p>Nulla pellentesque dignissim enim sit amet venenatis urna. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et netus et malesuada fames ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Varius sit amet mattis vulputate enim nulla. Tortor aliquam nulla facilisi cras fermentum odio eu. Consequat ac felis donec et odio pellentesque diam. Facilisi cras fermentum odio eu feugiat. Amet mauris commodo quis imperdiet massa tincidunt nunc. Lorem ipsum dolor sit amet consectetur. Adipiscing elit duis tristique sollicitudin. Tellus cras adipiscing enim eu turpis egestas pretium. Varius sit amet mattis vulputate enim nulla. Amet porttitor eget dolor morbi non arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Ac tortor vitae purus faucibus ornare suspendisse sed. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Consectetur adipiscing elit duis tristique.</p>
+            <h2 class="display-2"> Contact Me </h2>
+            <form>
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label for="inputEmail1">Email address</label>
+                    <input placeholder="name@example.com" type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input placeholder="John Doe" type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label for="formControlTextarea1">Your Message</label>
+                    <textarea class="form-control" id="formControlTextarea1" rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-lg btn-outline-success">Send Message</button>
+            </form>
           </section>
 
           <!-- Footer -->
