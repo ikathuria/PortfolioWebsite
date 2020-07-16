@@ -18,7 +18,7 @@ h3{
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
-p{
+p,a{
   font-family: 'Lato', sans-serif;
 }
 .content-wrapper{
@@ -71,17 +71,32 @@ body{
 #projects{
   background-color: #5EB9FF;
 }
-projects.card{
-  border-radius: 10px;
-  margin-right: 40px;
-  padding-bottom: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px #464646;
-  cursor: pointer;
+#projects .row{
+  margin-bottom: 50px;
 }
-projects.card-img-top{
+#projects img{
   border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 40px;
   box-shadow: 0 0 10px #464646;
+}
+#projects img:hover{
+  box-shadow: 0 0 0;
+}
+#projects p{
+  font-size: 30px;
+}
+#projects a{
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+.fa-link{
+  color: #000000;
+}
+#projects .btn:hover{
+  background-color: inherit;
+  box-shadow: 3px 3px 3px #464646;
 }
 
 /* <!-- Skills ------------------------------------------------------------> */
@@ -115,14 +130,14 @@ projects.card-img-top{
 a.mail:hover{
   color: rgba(106,28,137, 0.75);
 }
-.btn{
+#contact .btn{
   margin-left: .25rem;
   margin-right: .25rem;
   background-color: #FFFFFF;
   padding: 8px 12px;
   border-radius: 50%;
 }
-.btn:hover{
+#contact .btn:hover{
   background-color: rgba(255,255,255, 0.8);
   box-shadow: 0 0 12px #E2C0F0;
 }
