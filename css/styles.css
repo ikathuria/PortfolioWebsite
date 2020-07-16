@@ -94,6 +94,10 @@ projects.card-img-top{
   padding-left: 100px;
   background-color: #D1FF53;
 }
+#contact p{
+  text-align: center;
+  font-size: 50px;
+}
 
 /* <!-- Footer -----------------------------------------------------------> */
 #footer{
