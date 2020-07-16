@@ -12,9 +12,13 @@ h1{
 }
 h2{
   margin-bottom: 35px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster Two', cursive;
 }
-p,h3{
+h3{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+p{
   font-family: 'Lato', sans-serif;
 }
 .content-wrapper{
@@ -102,7 +106,7 @@ projects.card-img-top{
   padding-left: 100px;
   background-color: #D1FF53;
 }
-#contact p, a.mail{
+#contact a.mail{
   margin-top: 15px;
   text-align: center;
   font-size: 25px;
