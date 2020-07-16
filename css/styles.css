@@ -94,12 +94,44 @@ projects.card-img-top{
   padding-left: 100px;
   background-color: #D1FF53;
 }
-#contact p{
+#contact p, a.mail{
+  margin-top: 15px;
   text-align: center;
-  font-size: 50px;
+  font-size: 25px;
+  color: #FF537B;
+}
+a.mail:hover{
+  color: rgba(106,28,137, 0.75);
+}
+.btn{
+  margin-left: .25rem;
+  margin-right: .25rem;
+  background-color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+.btn:hover{
+  background-color: rgba(255,255,255, 0.8);
+  box-shadow: 0 0 12px #E2C0F0;
+}
+.fa-globe{
+  color: #470063;
+}
+.fa-github{
+  color: #000000;
+}
+.fa-linkedin-square{
+  color: #2867B2;
+}
+.fa-instagram{
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* <!-- Footer -----------------------------------------------------------> */
 #footer{
-  background-color: #FFB553;
+  color: #FCF7F8;
+  background-color: #373737;
 }
