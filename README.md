@@ -1,1 +1,2 @@
-### My portfolio website made using html, css, bootstrap as well as javascript.
+# A Portfolio Website
+A simple portfolio website made with HTML, CSS, Bootstrap and Javascript. Deployed using Github Pages.
