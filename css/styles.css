@@ -1,181 +1,322 @@
-/* <!-- Global -----------------------------------------------------------> */
-html{
-  box-sizing: border-box;
-}
-*,*:before,*:after{
-  box-sizing: inherit;
-}
-h1{
-  font-weight: 700px;
-  margin: 0 0 30px 0;
-  font-family: 'Poiret One', cursive;
-}
-h2{
-  margin-bottom: 35px;
-  font-family: 'Lobster Two', cursive;
-}
-h3{
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-}
-p{
-  font-family: 'Lato', sans-serif;
-}
-a{
-  color: black;
-  font-family: 'Lato', sans-serif;
-  text-decoration: none;
-}
-body{
-  margin: 0;
-  padding: 0;
-}
-.content-wrapper{
-  padding: 160px 0;
+/* Global ----------------------------------------------------------- */
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-/* <!-- Navigation bar ---------------------------------------------------> */
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin-bottom: 35px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+/* Navigation bar --------------------------------------------------- */
+
 .navbar {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 70px 10px;
-  transition: 0.8s;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
 }
+
 .floatingNav {
-  box-shadow: 0px 1px 10px #999;
-}
-.navbar-brand{
-  font-family: 'Homemade Apple', cursive;
-}
-.navbar a{
-  color: #000;
-}
-.navbar a:hover{
-  color: rgba(0,0,0, 0.75);
+    /* box-shadow: 0px 1px 10px rgb(94, 94, 94); */
+    background-color: #000000;
 }
 
-.active{
-  color: #f60c4b!important;
+.navbar-brand {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 35px!important;
 }
 
-/* <!-- Header -----------------------------------------------------------> */
-#header{
-  max-width: inherit;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 260px;
-  padding-bottom: 330px;
+.navbar a {
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
-/* <!-- Projects ---------------------------------------------------------> */
-#projects{
-  background-color: #5EB9FF;
-}
-#projects .col img{
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid #000000;
-  box-shadow: 0 10px 10px #666666;
-}
-#projects .col p{
-  font-size: 30px;
-  text-align: center;
-  color: #000000;
-}
-#projects .col a:hover{
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
-}
-#projects .col img:hover{
-  box-shadow: 0 0 0 #666666;
+.navbar a:hover {
+    color: rgba(0, 0, 0, 0.75);
 }
 
-/* <!-- Skills ------------------------------------------------------------> */
-#skills{
-  padding-right: 100px;
-  padding-left: 100px;
-  background-color: #D759FF;
+.navbar .active {
+    color: #f60c4b!important;
+    text-decoration: underline;
 }
-/* Box slider ------------------------------------------------------------- */
+
+/* Sections -------------------------------------------------------- */
+
+section {
+    height: 100vh;
+    padding-top: 12vh;
+}
+
+/* Header ----------------------------------------------------------- */
+
+#header div .container {
+    height: 10em;
+    position: relative;
+}
+
+.jumbotron {
+    background-image: url(../images/smoke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 150px;
+    color: #000;
+    letter-spacing: 0.1em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#header a {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    color: #000;
+}
+
+/* About ------------------------------------------------------------ */
+
+#about img {
+    width: 75%;
+}
+
+#about p {
+    font-size: 20px;
+}
+
+/* Projects --------------------------------------------------------- */
+
+#projects {
+    height: 130vh;
+    background-color: #dddddd;
+}
+
+#projects .row {
+    margin-top: 50px;
+}
+
+#projects .card {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills ------------------------------------------------------------ */
+
+#skills {
+    height: 120vh;
+    background-color: #ffffff;
+}
+
+#skills .card {
+    margin-top: 20px;
+    border: 0;
+}
+
+#skills .card .card-header {
+    box-shadow: -5px 5px rgb(0, 0, 0), -10px 10px rgb(71, 71, 71), -15px 15px rgb(184, 184, 184);
+}
+
+#skills .fa-python {
+    background: linear-gradient(145deg, #306998 40%, #FFD43B 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skills .fa-git-alt {
+    color: #f34f29;
+}
+
+#skills .fa-microsoft {
+    background: linear-gradient(45deg, #F34F1C, #F34F1C 100%), linear-gradient(135deg, #01A6F0, #01A6F0), linear-gradient(225deg, #7FBC00, #7FBC00), linear-gradient(225deg, #FFBA01, #FFBA01);
+    background-size: 50% 50%;
+    background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skills .fa-android {
+    color: #3DDC84;
+}
+
+#skills .fa-html5 {
+    color: #F16529;
+}
+
+#skills .fa-css3-alt {
+    color: #2965f1;
+}
+
+#skills .fa-bootstrap {
+    color: #602C50;
+}
+
+#skills .fa-js {
+    color: #F0DB4F;
+    background-color: #323330;
+}
+
+#skills .fa-file-image {
+    color: #101841;
+}
+
+#skills .fa-camera {
+    color: #464646;
+}
+
+#skills .fa-palette {
+    background: linear-gradient(to bottom, rgb(241, 161, 241), rgb(143, 62, 201), rgb(118, 118, 255), rgb(144, 228, 144), rgb(248, 248, 162), rgb(255, 209, 123), rgb(247, 107, 107));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skills .fa-paw {
+    color: #000000;
+}
+
+/* Box slider -------------------------------------------------------- */
+
 .box {
-  width: 227px;
-  height: 227px;
-  background-color: #f6f6f6;
-  margin-bottom: 10px;
-}
-.box p {
-  color: #461e52;
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 22px;
-  font-weight: 700;
-  padding: 30% 30px 0 30px;
-  text-align: center;
-  transition: none;
-  line-height: 1;
-  font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
-}
-.box:hover{
-  background-color: #461e52;
-}
-.box:hover p {
- color:#fff;
- text-decoration:none;
+    width: 227px;
+    height: 227px;
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
 }
 
-/* <!-- Contact ----------------------------------------------------------> */
-#contact{
-  padding-right: 100px;
-  padding-left: 100px;
-  background-color: #D1FF53;
+.box p {
+    color: #461e52;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 30% 30px 0 30px;
+    text-align: center;
+    transition: none;
+    line-height: 1;
+    font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
 }
-#contact .btn{
-  margin-left: .25rem;
-  margin-right: .25rem;
-  background-color: #FFFFFF;
-  padding: 8px 12px;
-  border-radius: 50%;
+
+.box:hover {
+    background-color: #461e52;
 }
-#contact .btn:hover{
-  background-color: rgba(255,255,255, 0.8);
-  box-shadow: 0 0 12px #E2C0F0;
+
+.box:hover p {
+    color: #fff;
+    text-decoration: none;
 }
-#contact img{
-  height: 41.6px;
-  width: 34.288px;
+
+/* Contact ------------------------------------------------------- */
+
+#contact {
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #dddddd;
 }
-.fa-github{
-  color: #000000;
+
+#contact form .row {
+    padding-top: 20px;
 }
-.fa-linkedin{
-  color: #2867B2;
+
+#contact form label {
+    font-size: 20px;
 }
-.fa-instagram{
-  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+
+#contact li {
+    text-decoration: none;
+    display: block;
+}
+
+/* website */
+
+#contact img {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+#contact li:nth-child(1) .btn:hover {
+    background-color: rgb(153, 197, 151);
+}
+
+/* github */
+
+.fa-github {
+    color: rgb(0, 0, 0);
+}
+
+#contact .btn:hover .fa-github {
+    color: rgb(255, 255, 255);
+}
+
+#contact li:nth-child(2) .btn:hover {
+    background-color: rgba(0, 0, 0);
+}
+
+/* linkedin */
+
+.fa-linkedin {
+    color: #2867B2;
+}
+
+#contact .btn:hover .fa-linkedin {
+    color: rgb(255, 255, 255);
+}
+
+#contact li:nth-child(3) .btn:hover {
+    background-color: #2867B2;
+}
+
+/* instagram */
+
+.fa-instagram {
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#contact .email{
-  padding-top: 30px;
-}
-#contact .email a{
-  text-align: center;
-  font-size: 25px;
-  color: #FF537B;
-}
-.email a:hover{
-  color: rgba(255,83,123, 0.5);
-  text-decoration: underline;
+
+#contact .btn:hover .fa-instagram {
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* <!-- Footer -----------------------------------------------------------> */
-#footer{
-  color: #FCF7F8;
-  background-color: #373737;
+#contact li:nth-child(4) .btn:hover {
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
+
+/* Footer ---------------------------------------------------------------------- */
+
+#footer {
+    color: #FCF7F8;
+    background-color: #373737;
 }

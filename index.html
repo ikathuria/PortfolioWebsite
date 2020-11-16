@@ -1,262 +1,580 @@
 <!DOCTYPE html>
-    <head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="description" content="A simple portfolio website made with HTML, CSS, Bootstrap and Javascript. Deployed using Github Pages.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- jQuery, jpopper, js -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <!-- Title -->
-        <title>Ishani's Portfolio</title>
-        <link rel="icon" href="images/rainbow.svg" type="image" sizes="16x16">
+    <!-- jQuery, jpopper, js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-        <!-- icons -->
-        <link rel="stylesheet" href="icons\fontawesome\css\all.css">
+    <!-- Title -->
+    <title>Ishani's Portfolio</title>
+    <link rel="icon" href="images/rainbow.svg" type="image" sizes="16x16">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Homemade+Apple&family=Lato:ital,wght@0,400;0,700;1,400&family=Oswald&family=Poiret+One&display=swap" rel="stylesheet">
 
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="40">
+</head>
 
-        <!-- Navigation bar -->
-        <section id="topnav" style="margin-bottom: 70px; z-index: 99;">
-          <div class="container-fluid px-0">
-            <nav id="changenav" class="navbar navbar-expand-lg bg-white fixed-top">
-              <div class="container mx-lg-5 px-md-5">
-                <a id="logo" class="navbar-brand " href="#" style="font-size:35px;">
-                  Ishani Kathuria
-                </a>
-                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <!-- content -->
-                    <li class=" page nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#projects"> Projects </a>
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- Navigation bar -->
+    <nav id="changenav" class="navbar navbar-expand-lg fixed-top">
+
+        <div class="container">
+            <!-- nav logo -->
+            <a id="logo" class="navbar-brand" href="#">
+                Ishani Kathuria
+            </a>
+
+            <!-- button for smaller screens -->
+            <button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- nav content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about"> About </a>
                     </li>
-                    <li class="page nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#skills"> Skills </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects"> Projects </a>
                     </li>
-                    <li class="page nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#contact"> Contact </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll js-scroll-trigger" href="#skills"> Skills </a>
                     </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact"> Contact </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div> <!-- /container -->
+    </nav>
+
+    <div class="main">
+
+        <!-- HEADER -->
+        <section id="header" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>Hi there</h1>
+            </div>
+
+            <a href="#about" class="btn js-scroll-trigger" role="button" aria-disabled="true"><i class="fas fa-chevron-down fa-3x"></i></a>
+
         </section>
 
-        <div class="main">
-
-          <!-- header -->
-
-          <section id="header" class="container-fluid">
-            <h1 class="display-1">Hi there.</h1>
-          </section>
-
-          <!-- projects -->
-
-          <section id="projects" class="content-wrapper">
-            <h2 class="display-2" style="padding:0 100px;">Projects</h2>
-            <div class="row">
-              <div class="col">
-
-                <p><a href="portfolio.html" target="_blank">My Portfolio</a></p>
-                <a href="portfolio.html" target="_blank"><img src="images/portfolio.jpg" alt="portfolio"></a>
-
-              </div>
-              <div class="col">
-
-                <p><a href="portfolio.html" target="_blank">My Portfolio</a></p>
-                <a href="portfolio.html"><img src="images/portfolio.jpg" alt="portfolio"></a>
-
-              </div>
-            </div>
-
-          </section>
-
-          <!-- skills -->
-
-          <section id="skills" class="content-wrapper container-fluid" style="padding-left: 100px; padding-right:100px;">
-            <h2 class="display-2">What makes me, <em>me</em></h2>
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-md-center col-xs-auto">
-                  	<div class="col-md-auto col-sm-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-terminal" aria-hidden="true"></i><br><br>Coding</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-code-fork" aria-hidden="true"></i><br><br>Git</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-windows" aria-hidden="true"></i><br><br>Microsoft Office</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-android" aria-hidden="true"></i><br><br>App Development</p>
-                  		  </div>
-                      </div>
-                    </div>
-                  </div><!--row-->
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row justify-content-md-center">
-                  	<div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-html5" aria-hidden="true"></i><br><br>HTML5</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-css3" aria-hidden="true"></i><br><br>CSS3</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-wordpress" aria-hidden="true"></i><br><br>Wordpress</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-file-image-o" aria-hidden="true"></i><br><br>Photoshop</p>
-                  		  </div>
-                      </div>
-                    </div>
-                  </div><!--row-->
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row justify-content-md-center">
-                  	<div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-camera-retro" aria-hidden="true"></i><br><br>Photography</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-paint-brush" aria-hidden="true"></i><br><br>Painting</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-paw" aria-hidden="true"></i><br><br>Animals</p>
-                  		  </div>
-                      </div>
-                    </div>
-                    <div class="col-md-auto col-sm-auto col-xs-auto">
-                  	  <div class="d-none d-sm-block">
-                  		  <div class="box">
-                  			<p><i class="fa fa-3x fa-music" aria-hidden="true"></i><br><br>Music</p>
-                  		  </div>
-                      </div>
-                    </div>
-                  </div><!--row-->
-                </div>
-              </div><!--carousel-->
-
-              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </section>
-
-          <!-- contact -->
-
-          <section id="contact" class="contact content-wrapper container-fluid" style="padding-left: 100px; padding-right:100px;">
-            <h2 class="display-2"> Contact Me </h2>
+        <!-- ABOUT -->
+        <section id="about">
             <div class="container text-center">
-              <div class="row">
 
-                <div class="col-md-2 col-sm-12">
+                <h2 class="display-2">About Me</h2>
 
-                </div>
+                <div class="row">
 
-                <div class="col-md-2 col-sm-12">
-                  <h3>Website</h3>
-                  <p><a href="https://ishani.kathuria.net/" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" id="myWebsite"><img src="images/ik.svg" alt="website logo"></a></p>
-                </div>
+                    <div class="col-6">
+                        <img src="images/me.jpg" class="img-thumbnail float-lg-left">
+                    </div>
+                    
+                    <div class="col-6">
+                        <h3 class="display-4">Ishani Kathuria</h3>
+                        <h4 class="text-muted">Web Developer & Artist</h4>
 
-                <div class="col-md-2 col-sm-12">
-                  <h3>GitHub</h3>
-                  <p><a href="https://github.com/ikathuria" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" id="gitHub"><i class="fab fa-github fa-2x"></i></a></p>
-                </div>
+                        <hr>
 
-                <div class="col-md-2 col-sm-12">
-                  <h3>LinkedIn</h3>
-                  <p><a href="https://www.linkedin.com/in/ishani-kathuria/" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" id="linkedIn"><i class="fab fa-linkedin fa-2x"></i></a></p>
-                </div>
+                        <p>Just a simple girl from India with a passion for technology. I absolutely love web development, programming and data science. In my free time, I draw, read and take pictures of beautiful things. You can check out some of my projects right below or visit<a href="https://ishani.kathuria.net"><em> here </em></a>for more content.</p>
+                    </div>
 
-                <div class="col-md-2 col-sm-12">
-                  <h3>Instagram</h3>
-                  <p><a href="https://www.instagram.com/ii.meraki.ii/?hl=en" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" id="instagram"><i class="fab fa-instagram fa-2x"></i></a></p>
-                </div>
+                </div> <!-- /row -->
 
-                <div class="col-md-2 col-sm-12">
+            </div> <!-- /container -->
+        </section>
 
-                </div>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container text-center">
 
-              </div>
-            </div>
-            <h3 class="email container text-center">
-              You can also email me at <a href="mailto:ishani@kathuria.net?subject=feedback">ishani@kathuria.net</a>
-            </h3>
-          </section>
+                <h2 class="display-2">Projects</h2>
 
-          <!-- Footer -->
+                <div class="row">
 
-          <footer id="footer" class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3">© 2020 Built with love</div>
-          </footer>
-          </div>
-          <script src="scripts/nav-scroll.js"></script>
-          <script src="scripts/active.js"></script>
-      </body>
-  </html>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">First website</h3>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="https://ikathuria.github.io/FirstWebsite/" class="btn btn-dark">Visit Website</a>
+                                <a href="https://github.com/ikathuria/FirstWebsite" class="btn btn-dark">Look at the code</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2020
+                            </div>
+                        </div>
+
+                    </div> <!-- /first col -->
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">CSS Portfolio</h3>
+                                <p class="card-text">A simple portfolio website made with HTML, CSS, Bootstrap and Javascript.</p>
+                                <a href="https://ikathuria.github.io/PortfolioWebsite/" class="btn btn-dark">Visit Website</a>
+                                <a href="https://github.com/ikathuria/PortfolioWebsite" class="btn btn-dark">Look at the code</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2020
+                            </div>
+                        </div>
+
+                    </div> <!-- /second col -->
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Python Games</h3>
+                                <p class="card-text">Some popular offline games given an online twist with python.</p>
+                                <a href="https://pythongames.ikathuria.repl.run/" class="btn btn-dark">Play the games</a>
+                                <a href="https://github.com/ikathuria/PythonGames" class="btn btn-dark">Look at the code</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2020
+                            </div>
+                        </div>
+
+                    </div> <!-- /third col -->
+                </div> <!-- /first row -->
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Django Portfolio</h3>
+                                <p class="card-text">A portfolio web application made with django and deployed on heroku.</p>
+                                <a href="https://fierce-thicket-91337.herokuapp.com/" class="btn btn-dark">Visit Website</a>
+                                <a href="https://github.com/ikathuria/DjangoPortfolio" class="btn btn-dark">Look at the code</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2020
+                            </div>
+                        </div>
+
+                    </div> <!-- /first col -->
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Python Voice Assistant</h3>
+                                <p class="card-text">A simple voice assistant made using Python and it's various packages.</p>
+                                <a href="https://github.com/ikathuria/Riley" class="btn btn-dark">Look at the code</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2020
+                            </div>
+                        </div>
+                    
+                    </div> <!-- /second col -->
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Something Special</h3>
+                                <p class="card-text">Coming</br>Soon.</p>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                2021
+                            </div>
+                        </div>
+
+                    </div> <!-- /third col -->
+                </div> <!-- /second row -->
+
+            </div> <!-- /container -->
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="container text-center">
+
+                <h2 class="display-2">What makes me, <em>me</em></h2>
+
+                <div class="row">
+
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Python</h3>
+                            <div class="card-body">
+                                <i class="fab fa-python fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Git</h3>
+                            <div class="card-body">
+                                <i class="fab fa-git-alt fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Microsoft Office</h3>
+                            <div class="card-body">
+                                <i class="fab fa-microsoft fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">App Dev</h3>
+                            <div class="card-body">
+                                <i class="fab fa-android fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- /first row -->
+
+                <div class="row">
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">HTML5</h3>
+                            <div class="card-body">
+                                <i class="fab fa-html5 fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">CSS</h3>
+                            <div class="card-body">
+                                <i class="fab fa-css3-alt fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Bootstrap</h3>
+                            <div class="card-body">
+                                <i class="fab fa-bootstrap fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Javascript</h3>
+                            <div class="card-body">
+                                <i class="fab fa-js fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div> <!-- /second row -->
+
+                <div class="row">
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Photoshop</h3>
+                            <div class="card-body">
+                                <i class="fas fa-file-image fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Photography</h3>
+                            <div class="card-body">
+                                <i class="fas fa-camera fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Painting</h3>
+                            <div class="card-body">
+                                <i class="fas fa-palette fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card">
+                            <h3 class="card-header">Animals</h3>
+                            <div class="card-body">
+                                <i class="fas fa-paw fa-4x"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div> <!-- /third row -->
+
+                <!-- <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row justify-content-md-center col-xs-auto">
+                                <div class="col-md-auto col-sm-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-terminal fa-3x"></i><br><br>Coding</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-git-alt fa-3x"></i><br><br>Git</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-microsoft fa-3x"></i><br><br>Microsoft Office</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-android fa-3x"></i><br><br>App Development</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="carousel-item">
+
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-html5 fa-3x"></i><br><br>HTML5</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-css3-alt fa-3x"></i><br><br>CSS3</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fab fa-wordpress fa-3x"></i><br><br>Wordpress</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-file-image fa-3x"></i><br><br>Photoshop</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-camera fa-3x"></i><br><br>Photography</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-palette fa-3x"></i><br><br>Painting</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-paw fa-3x"></i><br><br>Animals</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto col-sm-auto col-xs-auto">
+                                    <div class="d-none d-sm-block">
+                                        <div class="box">
+                                            <p><i class="fas fa-music fa-3x"></i><br><br>Music</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div> -->
+
+            </div> <!-- /container -->
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container text-center">
+                <h2 class="display-2"> Contact Me </h2>
+
+                <div class="row">
+
+                    <!-- contact form -->
+                    <div class="col-md-9 text-left">
+
+                        <form method="POST" action="https://formspree.io/f/xpzolllg">
+                            <input type="hidden" name="_subject" value="Contact request from personal website" />
+
+                            <div class="row">
+                                <!-- email -->
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+                                        <label for="email" class="">Your Email</label>
+                                        <input type="email" class="form-control" name="_replyto" placeholder="you@you.com" required>
+                                    </div>
+
+                                </div>
+                            </div> <!-- /first row -->
+
+                            <div class="row">
+                                <!-- message -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                        <label for="message">Your Message</label>
+                                        <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
+
+                                    </div>
+                                </div>
+                            </div> <!-- /second row -->
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                        <button class="btn btn-dark" type="submit">Send <i class="far fa-paper-plane"></i></button>
+
+                                    </div>
+                                </div>
+
+                            </div> <!-- /third row -->
+
+                        </form>
+                    </div> <!-- /outer col -->
+
+                    <div class="col-md-3 text-center">
+                        <ul>
+                            <!-- website -->
+                            <li>
+                                <a href="https://ishani.kathuria.net/" target="_blank" aria-disabled="true" class="btn btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="MY WEBSITE!"><img src="images/website.png" alt="website logo"></a>
+                            </li>
+
+                            <!-- github -->
+                            <li>
+                                <a href="https://github.com/ikathuria" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" class="btn btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="GITHUB!"><i class="fab fa-github fa-3x"></i></a>
+                            </li>
+
+                            <!-- linkedin -->
+                            <li>
+                                <a href="https://www.linkedin.com/in/ishani-kathuria/" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" class="btn btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="LINKEDIN!"><i class="fab fa-linkedin fa-3x"></i></a>
+                            </li>
+
+                            <!-- instagram -->
+                            <li>
+                                <a href="https://www.instagram.com/ii.meraki.ii/?hl=en" target="_blank" class="btn btn-lg" role="button" aria-disabled="true" class="btn btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="INSTAGRAM!"><i class="fab fa-instagram fa-3x"></i></a>
+                            </li>
+
+                        </ul> <!-- /icons -->
+                    </div> <!-- /social media -->
+
+                </div> <!-- /outer row -->
+            </div> <!-- /container-->
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2020 Ishani Kathuria.</div>
+        </footer>
+
+    </div> <!-- /main -->
+
+    <!-- SCRIPTS -->
+    <!-- nav scroll -->
+    <script src="scripts/nav-scroll.js"></script>
+
+    <!-- active nav -->
+    <script src="scripts/active.js"></script>
+
+    <!-- tooltips -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
+    </script>
+
+</body>
+
+</html>
